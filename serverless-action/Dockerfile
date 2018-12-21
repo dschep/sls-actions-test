@@ -1,4 +1,4 @@
-FROM nodejs:10
+FROM node:10-slim
 
 
 LABEL version="1.0.0"
