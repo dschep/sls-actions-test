@@ -6,4 +6,5 @@ workflow "New workflow" {
 action "GitHub Action for Serverless Framework" {
   uses = "./serverless-action"
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  args = "deploy"
 }
