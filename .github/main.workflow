@@ -1,6 +1,6 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["GitHub Action for Serverless Framework"]
+  resolves = ["Deploy with Serverless"]
 }
 
 action "Only on master branch" {
@@ -8,7 +8,7 @@ action "Only on master branch" {
   args = "branch master"
 }
 
-action "GitHub Action for Serverless Framework" {
+action "Deploy with Serverless" {
   uses = "serverless/github-action@master"
   args = "deploy"
   needs = ["Only on master branch"]
